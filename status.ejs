@@ -1,0 +1,37 @@
+
+<%layout("/layouts/boilerplate")%>
+<body> 
+             <h2 class="s">Status</h2>
+        
+            <table class="tb">
+              <tr>
+                <th>Model</th>
+                <th>Price</th>
+                <th>Days_For_Rent</th>
+                <th>Booked_By</th>
+                <th>Total_Amount</th>
+                <th>Terminate</th>
+                 
+               </tr>  
+                  <%for(let listing of allListings){%>
+                      <tr>
+                      <td><%=listing.model%></td>
+                      <td><%=listing.price%></td>
+                      <td><%=listing.daysforrent%></td>
+                      <td><%=listing.bookedby%></td>
+                      <td><%=listing.amount%></td>
+                      <td><a href="/listings/status/<%=listing._id%>">Terminate</a></td>
+                  </tr>
+                
+                  <%}%>
+                </table>
+               
+                
+            
+        
+
+              
+         
+    
+</body>
+

@@ -1,0 +1,35 @@
+<%layout("/layouts/boilerplate")%>
+<body> 
+    <div class="row">
+        <div class="col-8 offset-2">
+        <form method="POST" action="/listings">
+            <br>
+            <br>
+            <div class="mb-3">
+                <label class="form-label">Model</label>
+                <input type="text" class="form-control" placeholder="Enter Model"  name="listing[model]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Desc</label>
+                <textarea type="text" class="form-control" placeholder="Enter desc" name="listing[desc]" ></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Category</label>
+                <input type="text" class="form-control" placeholder="Enter Category" name="listing[category]" >
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Image</label>
+                <input type="text"  class="form-control" placeholder="Enter image URL" name="listing[image]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input type="text" class="form-control" placeholder="Enter Price" name="listing[price]" >
+            </div>
+        </br>
+            <button class="btn btn-dark  add-btn mt-3">ADD</button>
+        </form>
+        </div>
+        </div>
+
+</body>
+</html>
